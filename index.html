@@ -9,10 +9,26 @@
   </head>
   <body>
     <form action="">
-      <input type="text" name="firstname" />
-      <input type="text" name="lastname" />
-      <input type="phonenumber" name="phonenumber" />
-      <input type="email" name="email" />
+      <div class="form-field">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" />
+      </div>
+
+      <div class="form-field">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" />
+      </div>
+
+      <div class="form-field">
+        <label for="phonenumber">phonenumber</label>
+        <input type="phonenumber" name="phonenumber" />
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" name="email" />
+      </div>
+
       <textarea
         name=""
         id="sendmessage"
@@ -20,6 +36,7 @@
         rows="10"
         placeholder="type a message"
       ></textarea>
+      <button>Submit</button>
     </form>
   </body>
 </html>
