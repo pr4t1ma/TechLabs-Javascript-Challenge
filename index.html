@@ -3,30 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <form action="">
+    <form action="" id="form">
+      <h2>Sign up</h2>
       <div class="form-field">
         <label for="firstname">First Name</label>
-        <input type="text" name="firstname" />
+        <input id="name" type="text" name="firstname" />
       </div>
 
       <div class="form-field">
         <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" />
+        <input id="last" type="text" name="lastname" />
       </div>
 
       <div class="form-field">
-        <label for="phonenumber">phonenumber</label>
-        <input type="phonenumber" name="phonenumber" />
+        <label id="phonenumber" for="phonenumber">Phone Number</label>
+        <input
+          type="phonenumber"
+          name="phonenumber"
+          required
+          id="number"
+          class="vldinput"
+        />
+        <div class="vldmsg"></div>
       </div>
 
       <div class="form-field">
         <label for="email">Email</label>
-        <input type="email" name="email" />
+        <input id="email" type="email" name="email" />
+      </div>
+
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input id="password" type="password" autocomplete="" />
+        <div class="save"></div>
       </div>
 
       <textarea
@@ -36,7 +50,11 @@
         rows="10"
         placeholder="type a message"
       ></textarea>
-      <button>Submit</button>
+      <div>
+        <button id="btn">Submit</button>
+        <div class="submsg"></div>
+      </div>
     </form>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -34,12 +34,16 @@ form textarea {
 }
 
 form label {
+  display: block;
   color: #fff;
   margin: 10px 0;
 }
 
 form button {
   margin: 10px 0;
+}
+form h2 {
+  color: #fff;
 }
 button {
   border-radius: 10px;
@@ -48,4 +52,9 @@ button {
   border: none;
   background: var(--color-secondary);
   box-shadow: #0d0c11;
+}
+
+.error {
+  color: red;
+  border: 1px solid red;
 }
